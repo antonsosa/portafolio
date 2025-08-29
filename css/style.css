@@ -1,0 +1,208 @@
+/* Reseteo y Variables */
+:root {
+    --primary-color: #01093a;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --bg-color: #fff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #222;
+    text-align: center;
+}
+
+/* Sección de Cabecera */
+.hero-section {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(8, 1, 51, 0.7), rgba(0, 0, 0, 0.7)), url('/img/bottom-lights-background.png');
+    /* El primer 'linear-gradient' es la capa semitransparente (overlay) */
+    /* Asegúrate de que 'background-lights.jpg' sea la ruta correcta a tu imagen */
+
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.7); /* Borde blanco semitransparente */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto 0;
+    line-height: 1.5;
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Secciones Generales */
+section {
+    margin-bottom: 60px;
+}
+
+/* Estilos de Proyectos */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.tech-stack {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.tech-stack span {
+    background-color: var(--secondary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.project-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #303f9f;
+}
+
+.btn-secondary {
+    background-color: #ddd;
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: #ccc;
+}
+
+/* Estilos de Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+.skill-item {
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.skill-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Pie de Página */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+}
