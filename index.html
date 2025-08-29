@@ -1,171 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio - Josue A. Sosa</title>
-  <style>
-    /* ===== Reset & Base ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    body {
-      background: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* ===== Header ===== */
-    header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #aaa;
-    }
-
-    /* ===== Container ===== */
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    /* ===== Project Cards ===== */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      margin-bottom: 0.5rem;
-      color: #222;
-    }
-    .card p {
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-      color: #555;
-    }
-    .btn-group {
-      display: flex;
-      gap: 0.5rem;
-    }
-    .btn {
-      flex: 1;
-      text-align: center;
-      padding: 0.6rem;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      transition: 0.2s;
-    }
-    .btn.demo {
-      background: #0077ff;
-      color: #fff;
-    }
-    .btn.code {
-      background: #eee;
-      color: #333;
-    }
-    .btn:hover {
-      opacity: 0.9;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    footer a {
-      color: #0077ff;
-      margin: 0 0.5rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de [Tu Nombre]</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>J. Antonio Sosa</h1>
-    <p>Desarrollador Web | Python · PHP · JavaScript</p>
-  </header>
-
-<!-- Image UnderConstruction-->
-  <div style="text-align: center; margin: 2rem;">
-    <img src="/img/2.jpg" alt="Sitio en Construcción" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-<!--
-   Projects 
-  <div class="container">
-    <h2>Proyectos</h2>
-    <div class="projects">
-
-      Proyecto 1 
-      <div class="card">
-        <h3>Projecto 1</h3>
-        <p>Sistema web control de horas sociales hecho en PHP + MySQL.</p>
-        <div class="btn-group">
-          <a href="https://antoniososa.github.io/proyecto1" target="_blank" class="btn demo">Ver Demo</a>
-          <a href="https://github.com/antoniososa/proyecto1" target="_blank" class="btn code">Código</a>
+    <header class="hero-section">
+        <div class="hero-content">
+            <img src="https://via.placeholder.com/150" alt="Foto de Perfil" class="profile-pic">
+            <h1>Josué A Sosa - Desarrollador Web</h1>
+            <p class="bio">Creando soluciones digitales con código limpio y diseños intuitivos</p>
         </div>
-      </div>
+    </header>
 
-      Proyecto 2 
-      <div class="card">
-        <h3>App en Flask</h3>
-        <p>Aplicación web con Python y Flask desplegada en Render.</p>
-        <div class="btn-group">
-          <a href="https://flask-demo.onrender.com" target="_blank" class="btn demo">Ver Demo</a>
-          <a href="https://github.com/antoniososa/flask-demo" target="_blank" class="btn code">Código</a>
+    <main>
+        <section class="projects-section">
+            <h2>Mis Proyectos</h2>
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Vista previa del proyecto 2" class="project-image">
+                    <div class="project-info">
+                        <h3>Proyecto 1 - Blog</h3>
+                        <p>Una blog minimalista sobre la obra literaria "El Decamerón".</p>
+                        <div class="tech-stack">
+                            <span>WordPress</span> <span>HTML</span> <span>CSS</span><span>PHP</span> <span>MySQL</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                            <a href="#" class="btn btn-secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Vista previa del proyecto 1" class="project-image">
+                    <div class="project-info">
+                        <h3>Nombre del Proyecto 1</h3>
+                        <p>Una aplicación web que permite a los usuarios gestionar sus tareas diarias de manera colaborativa.</p>
+                        <div class="tech-stack">
+                            <span>React</span> <span>CSS</span> <span>Node.js</span> <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                            <a href="#" class="btn btn-secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Vista previa del proyecto 2" class="project-image">
+                    <div class="project-info">
+                        <h3>Nombre del Proyecto 3</h3>
+                        <p>Una plataforma de e-commerce minimalista para una tienda de productos artesanales.</p>
+                        <div class="tech-stack">
+                            <span>Vue.js</span> <span>Sass</span> <span>Express.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                            <a href="#" class="btn btn-secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>Habilidades y Tecnologías</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-php"></i>
+                    <span>PHP</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-wordpress"></i>
+                    <span>WordPress</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
-      </div>
-
-       Proyecto 3 
-      <div class="card">
-        <h3>Tienda en PHP</h3>
-        <p>Mini e-commerce hecho en PHP + MySQL.</p>
-        <div class="btn-group">
-          <a href="http://tienda.epizy.com" target="_blank" class="btn demo">Ver Demo</a>
-          <a href="https://github.com/antoniososa/tienda-php" target="_blank" class="btn code">Código</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
--->
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Antonio Sosa</p>
-    <p>
-      <a href="https://github.com/antoniososa" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/antoniososa" target="_blank">LinkedIn</a> |
-      <a href="mailto:antonio@email.com">Email</a>
-    </p>
-  </footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
