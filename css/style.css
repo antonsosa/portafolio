@@ -158,6 +158,10 @@ section {
     background-color: #ccc;
 }
 
+.invisible-btn {
+    visibility: hidden;
+}
+
 /* Estilos de Habilidades */
 .skills-grid {
     display: grid;
