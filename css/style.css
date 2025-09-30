@@ -106,11 +106,17 @@ h2, h3 {
 }
 
 .content {
-  position: relative;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--primary-color); /* gris oscuro */
+
+}
+
+.inner-content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
   background-color: var(--bg-color);
+  padding: 2rem;
   box-shadow: var(--shadow);
 }
 
@@ -126,7 +132,7 @@ section {
 /* Estilos de Proyectos */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     justify-content: center;
 }
