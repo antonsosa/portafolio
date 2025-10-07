@@ -265,7 +265,7 @@
 
                                     <li><strong>Estructura organizativa en Active Directory</strong><br>
                                         <img src="/img/2-AD Config 3.png" alt="Vista de OU y usuarios en ADUC"
-                                            style="max-width: 100%; height: auto; width: 750px;" />
+                                            style="max-width: 100%; height: auto; width: 725px;" />
                                         <p>Se creó una estructura personalizada en Active Directory con unidades
                                             organizativas (OU) como <code>Usuarios</code>, <code>Equipos</code> y
                                             <code>TI</code>. Dentro de estas se gestionan usuarios y grupos de
@@ -276,7 +276,7 @@
 
                                     <li><strong>Unión del cliente Windows 10 al dominio</strong><br>
                                         <img src="/img/2-AD Config 4.png" alt="Cliente unido al dominio empresa.local"
-                                            style="max-width: 100%; height: auto; width: 750px;" />
+                                            style="max-width: 100%; height: auto; width: 725px;" />
                                         <p>El equipo <code>DESKTOP-UHGP23N</code> fue unido exitosamente al dominio
                                             <code>empresa.local</code>. Esta unión permite la autenticación
                                             centralizada,
@@ -288,7 +288,7 @@
                                     <li><strong>Validación de identidad y conectividad en el dominio</strong><br>
                                         <img src="/img/2-AD Config 5.png"
                                             alt="Comando whoami y ping al DC desde cliente Windows 10"
-                                            style="max-width: 100%; height: auto; width: 750px;" />
+                                            style="max-width: 100%; height: auto; width: 700px;" />
                                         <p>Desde el cliente <code>DESKTOP-UHGP23N</code>, se ejecutaron los comandos
                                             <code>whoami</code> y <code>ping</code> para validar la autenticación y
                                             conectividad con el controlador de dominio <code>192.168.10.10</code>. El
@@ -325,8 +325,25 @@
                                     VirtualBox, Windows Server 2022, Windows 10, Consola DHCP, Consola DNS, CMD,
                                     PowerShell
                                 </p>
+                                <p><strong>📸 Capturas:</strong></p>
+                                <ul>
+                                    <li><strong>Instalación del rol DHCP en Windows Server</strong><br>
+                                        <img src="/img/3-DHCP Config 1.png" alt="DHCP activo en Server Manager"
+                                            style="max-width: 100%; height: auto; width: 700px;" />
+                                        <p>Se instaló el rol <code>DHCP Server</code> en el equipo
+                                            <code>WIN-A2011HP1MTI</code> con IP <code>192.168.1.60</code>. El servicio
+                                            está activo y genera eventos informativos, lo que indica que está listo para
+                                            gestionar la asignación dinámica de direcciones IP en la red interna.
+                                        </p>
+                                    </li>
 
-                                <!-- Aquí irán tus capturas, documentación y resultados -->
+<li><strong>Configuración del ámbito DHCP</strong><br>
+<img src="..." alt="Ámbito RedInterna en consola DHCP" style="max-width: 100%; height: auto; width: 700px;" />
+<p>Se configuró el ámbito <code>RedInterna</code> en el servidor DHCP, definiendo el rango de direcciones <code>192.168.10.100</code> a <code>192.168.10.200</code> con una duración de concesión de <strong>8 días</strong>. Esta configuración permite la asignación automática de IPs a los clientes dentro de la red <code>empresa.local</code>.</p>
+</li>
+
+                                </ul>
+
                             </div>
                         </div>
                         <div class="lab-card">
