@@ -158,20 +158,20 @@
                                 <p><strong>📸 Capturas:</strong></p>
                                 <ul>
                                     <li><strong>Creación de VM en VirtualBox</strong><br>
-                                        <img src="/img/1-VMs Intalacion 1.png" alt="Configuración inicial de VM"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 1.png" alt="Configuración inicial de VM"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se definió el nombre, carpeta de almacenamiento, ISO de Windows Server 2022 y
                                             tipo de sistema operativo. Se optó por instalación manual para mayor
                                             control.</p>
                                         <br>
-                                        <img src="/img/1-VMs Intalacion 2.png" alt="Asignación de recursos a VM"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 2.png" alt="Asignación de recursos a VM"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se asignaron 3072 MB de RAM, 2 núcleos de CPU y 50 GB de disco, suficientes
                                             para prácticas de dominio y servicios básicos.</p>
                                         <br>
                                     </li>
                                     <li><strong>Configuración de red interna en VirtualBox</strong><br>
-                                        <img src="/img/1-VMs Intalacion 3.png" alt="Configuración de red interna"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 3.png" alt="Configuración de red interna"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se habilitó el adaptador de red y se configuró como <strong>Red
                                                 interna</strong> con el nombre <code>RedLabNueva</code>.
@@ -185,26 +185,26 @@
                                     </li>
 
                                     <li><strong>Instalación de Windows Server 2022</strong><br>
-                                        <img src="/img/1-VMs Intalacion 4.png" alt="Arranque desde ISO"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 4.png" alt="Arranque desde ISO"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>La VM inicia correctamente desde la ISO oficial de evaluación en español.</p>
                                         <br>
-                                        <img src="/img/1-VMs Intalacion 5.png" alt="Selección de edición"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 5.png" alt="Selección de edición"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se seleccionó <strong>Windows Server 2022 Standard con GUI</strong> para
                                             facilitar la administración visual y configuración de roles.</p>
                                         <br>
-                                        <img src="/img/1-VMs Intalacion 6.png" alt="Particionado del disco"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 6.png" alt="Particionado del disco"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se creó un volumen principal de 50 GB, suficiente para prácticas de AD, GPOs
                                             y servicios básicos.</p>
                                         <br>
-                                        <img src="/img/1-VMs Intalacion 7.png" alt="Instalación en progreso"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 7.png" alt="Instalación en progreso"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Instalación en progreso sin errores, confirmando compatibilidad del
                                             entorno virtual.</p>
                                         <br>
-                                        <img src="/img/1-VMs Intalacion 8.png" alt="Pantalla de login"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 8.png" alt="Pantalla de login"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Primera pantalla de inicio tras instalación. Se procede a configurar el
                                             sistema.</p>
@@ -239,7 +239,7 @@
                                 <p><strong>📸 Capturas:</strong></p>
                                 <ul>
                                     <li><strong>Instalación del rol AD DS</strong><br>
-                                        <img src="/img/2-AD Config 1.png" alt="Server Manager con rol AD DS activo"
+                                        <img src="/img/Labs/AD/2-AD Config 1.png" alt="Server Manager con rol AD DS activo"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Desde el <strong>Administrador del servidor</strong>, se confirma que el rol
                                             <code>Active Directory Domain Services</code> está instalado y operativo en
@@ -252,7 +252,7 @@
                                         </p>
                                     </li>
                                     <li><strong>Configuración del dominio Active Directory</strong><br>
-                                        <img src="/img/2-AD Config 2.png"
+                                        <img src="/img/Labs/AD/2-AD Config 2.png"
                                             alt="Propiedades del dominio empresa.local en ADUC"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se creó el dominio <code>empresa.local</code> con nivel funcional
@@ -264,7 +264,7 @@
                                     </li>
 
                                     <li><strong>Estructura organizativa en Active Directory</strong><br>
-                                        <img src="/img/2-AD Config 3.png" alt="Vista de OU y usuarios en ADUC"
+                                        <img src="/img/Labs/AD/2-AD Config 3.png" alt="Vista de OU y usuarios en ADUC"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se creó una estructura personalizada en Active Directory con unidades
                                             organizativas (OU) como <code>Usuarios</code>, <code>Equipos</code> y
@@ -275,7 +275,7 @@
                                     </li>
 
                                     <li><strong>Unión del cliente Windows 10 al dominio</strong><br>
-                                        <img src="/img/2-AD Config 4.png" alt="Cliente unido al dominio empresa.local"
+                                        <img src="/img/Labs/AD/2-AD Config 4.png" alt="Cliente unido al dominio empresa.local"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>El equipo <code>DESKTOP-UHGP23N</code> fue unido exitosamente al dominio
                                             <code>empresa.local</code>. Esta unión permite la autenticación
@@ -286,7 +286,7 @@
                                     </li>
 
                                     <li><strong>Validación de identidad y conectividad en el dominio</strong><br>
-                                        <img src="/img/2-AD Config 5.png"
+                                        <img src="/img/Labs/AD/2-AD Config 5.png"
                                             alt="Comando whoami y ping al DC desde cliente Windows 10"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Desde el cliente <code>DESKTOP-UHGP23N</code>, se ejecutaron los comandos
@@ -328,7 +328,7 @@
                                 <p><strong>📸 Capturas:</strong></p>
                                 <ul>
                                     <li><strong>Instalación del rol DHCP en Windows Server</strong><br>
-                                        <img src="/img/3-DHCP Config 1.png" alt="DHCP activo en Server Manager"
+                                        <img src="/img/Labs/DHCP/3-DHCP Config 1.png" alt="DHCP activo en Server Manager"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se instaló el rol <code>DHCP Server</code> en el equipo
                                             <code>WIN-A2011HP1MTI</code> con IP <code>192.168.1.60</code>. El servicio
@@ -337,11 +337,62 @@
                                         </p>
                                     </li>
 
-<li><strong>Configuración del ámbito DHCP</strong><br>
-<img src="..." alt="Ámbito RedInterna en consola DHCP" style="max-width: 100%; height: auto; width: 720px;" />
-<p>Se configuró el ámbito <code>RedInterna</code> en el servidor DHCP, definiendo el rango de direcciones <code>192.168.10.100</code> a <code>192.168.10.200</code> con una duración de concesión de <strong>8 días</strong>. Esta configuración permite la asignación automática de IPs a los clientes dentro de la red <code>empresa.local</code>.</p>
-</li>
-
+                                    <li><strong>Configuración del ámbito DHCP</strong><br>
+                                        <img src="/img/Labs/DHCP/3-DHCP Config 2.png" alt="Ámbito RedInterna en consola DHCP"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Se configuró el ámbito <code>RedInterna</code> en el servidor DHCP,
+                                            definiendo el rango de direcciones <code>192.168.10.100</code> a
+                                            <code>192.168.10.200</code> con una duración de concesión de <strong>8
+                                                días</strong>. Esta configuración permite la asignación automática de
+                                            IPs a los clientes dentro de la red <code>empresa.local</code>.
+                                        </p>
+                                    </li>
+                                    <li><strong>Asignación automática de IP al cliente</strong><br>
+                                        <img src="/img/Labs/DHCP/3-DHCP Config 3.png"
+                                            alt="ipconfig /flushdns y /renew en cliente Windows 10"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Desde el cliente <code>DESKTOP-UHGP23N</code>, se ejecutaron los comandos
+                                            <code>ipconfig /flushdns</code> y <code>ipconfig /renew</code> para
+                                            solicitar una nueva dirección IP al servidor DHCP. El resultado muestra una
+                                            IP dinámica dentro del rango <code>192.168.18.100–200</code> (según ámbito
+                                            configurado), confirmando que el servicio DHCP está funcionando
+                                            correctamente y que la configuración DNS fue aplicada.
+                                        </p>
+                                    </li>
+                                    <li><strong>Instalación del rol DNS en Windows Server</strong><br>
+                                        <img src="/img/Labs/DHCP/3-DHCP Config 4.png" alt="Panel DNS en Server Manager"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>El rol <code>DNS Server</code> fue instalado junto con <code>AD DS</code> en
+                                            el servidor <code>WIN-A0011PU1HTT</code>. El servicio está activo y genera
+                                            eventos de advertencia iniciales (ID 4013), típicos durante la fase de
+                                            configuración. Este rol permite la resolución de nombres dentro del dominio
+                                            <code>empresa.local</code>, facilitando la conectividad entre clientes y
+                                            servidores.
+                                        </p>
+                                    </li>
+                                    <li><strong>Validación de resolución DNS con nslookup</strong><br>
+                                        <img src="/img/Labs/DHCP/3-DHCP Config 5.png"
+                                            alt="nslookup empresa.local desde cliente Windows 10"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Desde el cliente <code>DESKTOP-UHGP23N</code>, se ejecutó el comando
+                                            <code>nslookup empresa.local</code> para validar la resolución de nombres en
+                                            el dominio. Aunque el servidor DNS aparece como <code>Unknown</code> debido
+                                            a la falta de zona inversa, el nombre <code>empresa.local</code> se resolvió
+                                            correctamente a la IP <code>192.168.10.10</code>, confirmando que el
+                                            servicio DNS está operativo.
+                                        </p>
+                                    </li>
+                                    <li><strong>Registro dinámico del cliente en DNS</strong><br>
+                                        <img src="/img/Labs/DHCP/3-DHCP Config 6.png"
+                                            alt="Registro A del cliente en zona win-adjapi.lujait"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Se validó que el cliente <code>DESKTOP-UJ6P3AN</code> fue registrado
+                                            automáticamente en la zona <code>win-adjapi.lujait</code> del servidor DNS.
+                                            El registro tipo <strong>A</strong> contiene la IP
+                                            <code>192.168.10.12</code> y el nombre completo
+                                            <code>DESKTOP-UJ6P3AN.win-adjapi.lujait</code>, confirmando que los
+                                            servicios DHCP y DNS están integrados correctamente.</p>
+                                    </li>
                                 </ul>
 
                             </div>
