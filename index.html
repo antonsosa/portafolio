@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,147 +9,371 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <div class="layout-wrapper">
-        
-            <!-- Sidebar -->
-            <aside class="sidebar">
 
-                <nav id="sidebarNav" class="col-md-1 sidebar position-fixed d-md-block d-none vh-100">
-                    <div class="d-flex flex-column justify-content-center h-100">
-                        <ul class="nav flex-column navbar-nav">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <nav id="sidebarNav" class="col-md-1 sidebar position-fixed d-md-block d-none vh-100">
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <ul class="nav flex-column navbar-nav">
                         <li class="nav-item"><a class="nav-link active text-white" href="#proyectos">Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#labs">Laboratorios IT</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#documentacion">Documentación</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </aside>
-
-            <!-- Contenido principal -->
-            <main class="content" data-bs-spy="scroll" data-bs-target="#sidebarNav" data-bs-offset="80" tabindex="0">
-                <div class="inner-content">
-                
-                    <header class="hero-section">
-                        <div class="hero-content">
-                            <img src="/img/PortafolioLogo.png" alt="Foto de Perfil" class="profile-pic">                      
-                            <h1>Antonio Sosa - IT / DEV</h1>
-                            <p class="bio">Especialista en IT & Desarrollador Web | En camino a roles de Ciberseguridad AppSec/SOC</p>
-                        </div>
-                    </header>
-                    <section id="proyectos" class="projects-section">
-                        <br><br>
-                        <h2>Mis Proyectos Web</h2>
-                        <div class="project-grid">
-                            <article class="project-card">
-                                <img src="/img/DecameronPreview.gif" alt="Vista previa del blog literario El Decamerón, mostrando la portada con las imagenes destacadas." class="project-image">
-                                <div class="project-info">
-                                    <h3>Proyecto Blog Personal</h3>
-                                    <p>Una blog minimalista sobre la obra literaria "El Decamerón".</p>
-                                    <div class="tech-stack">
-                                        <span>WordPress</span> <span>HTML</span> <span>CSS</span><span>PHP</span> <span>MySQL</span>
-                                        <span>Responsive Design</span>
-                                    </div>
-                                    <div class="project-links">
-                                        <a href="https://a-sosa-dev-projecto1.infinityfree.me/?i=1" class="btn btn-primary" target="_blank">Ver Proyecto</a>
-                                        <a href="https://github.com/antonsosa/Blog-El-Decameron.git" class="btn btn-secondary" target="_blank">Código</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="project-card">
-                                <img src="/img/SocialTrackPreview.gif" alt="Vista previa del sistema web SocialTrack" class="project-image">
-                                <div class="project-info">
-                                    <h3>Proyecto SocialTrack</h3>
-                                    <p>Sistema académico para registrar y controlar horas sociales de estudiantes.</p>
-                                    <div class="tech-stack">
-                                        <span>PHP</span><span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>MySQL</span><span>Bootstrap</span>
-                                    </div>
-                                    <div class="project-links">
-                                        <a href="#" class="btn btn-primary invisible-btn">Ver Proyecto</a>
-                                        <a href="https://github.com/antonsosa/Social_Track-PHP.git" class="btn btn-secondary">Código</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="project-card">
-                                <img src="/img/2.jpg" alt="En construccion" class="project-image">
-                                <div class="project-info">
-                                    <h3>Proyecto 3</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum ipsum eget sem pulvinar condimentum.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span> <span>CSS</span><span>Python</span> <span>MySQL</span>
-                                        <span>Responsive Design</span>
-                                    </div>
-                                    <div class="project-links">
-                                        <a href="#" class="btn btn-primary">Ver Proyecto</a>
-                                        <a href="#" class="btn btn-secondary">Código</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </section>
-                    <section class="skills-section">
-                        <h2>Habilidades y Tecnologías Web</h2>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS3</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-js"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-php"></i>
-                                <span>PHP</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-database"></i>
-                                <span>MySQL</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-git-alt"></i>
-                                <span>Git</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-wordpress"></i>
-                                <span>WordPress</span>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="labs" class="bg-light py-5">
-                        <div class="container">
-                            <h2 class="text-center mb-4">Laboratorios IT / SOC</h2>
-                            <img src="/img/2.jpg" alt="En construccion" sizes="(100vw)" class="img-fluid mb-4">
-                            
-                        </div>
-                    </section>
-                    <section id="documentacion" class="py-5">
-                        <div class="container">
-                            <h2 class="text-center mb-4">Documentación Técnica</h2>
-                            <img src="/img/2.jpg" alt="En construccion" sizes="(100vw)" class="img-fluid mb-4">
-                            
-                        </div>
-                    </section>
-                    <section id="contacto" class="text-white py-5">
-                        <div class="container text-center">
-                            <h2>Contacto</h2>
-                            <img src="/img/2.jpg" alt="En construccion" sizes="(100vw)" class="img-fluid mb-4">
-
-                        </div>
-                    </section>    
+                    </ul>
                 </div>
-            </main>
-            <div class="right-filler"></div>
-        
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="content" data-bs-spy="scroll" data-bs-target="#sidebarNav" data-bs-offset="80" tabindex="0">
+            <div class="inner-content">
+
+                <header class="hero-section">
+                    <div class="hero-content">
+                        <img src="/img/PortafolioLogo.png" alt="Foto de Perfil" class="profile-pic">
+                        <h1>Antonio Sosa - IT / DEV</h1>
+                        <p class="bio">Especialista en IT & Desarrollador Web | En camino a roles de Ciberseguridad
+                            AppSec/SOC</p>
+                    </div>
+                </header>
+                <section id="proyectos" class="projects-section">
+                    <br><br>
+                    <h2>Mis Proyectos Web</h2>
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <img src="/img/DecameronPreview.gif"
+                                alt="Vista previa del blog literario El Decamerón, mostrando la portada con las imagenes destacadas."
+                                class="project-image">
+                            <div class="project-info">
+                                <h3>Proyecto Blog Personal</h3>
+                                <p>Una blog minimalista sobre la obra literaria "El Decamerón".</p>
+                                <div class="tech-stack">
+                                    <span>WordPress</span> <span>HTML</span> <span>CSS</span><span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>Responsive Design</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://a-sosa-dev-projecto1.infinityfree.me/?i=1" class="btn btn-primary"
+                                        target="_blank">Ver Proyecto</a>
+                                    <a href="https://github.com/antonsosa/Blog-El-Decameron.git"
+                                        class="btn btn-secondary" target="_blank">Código</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <img src="/img/SocialTrackPreview.gif" alt="Vista previa del sistema web SocialTrack"
+                                class="project-image">
+                            <div class="project-info">
+                                <h3>Proyecto SocialTrack</h3>
+                                <p>Sistema académico para registrar y controlar horas sociales de estudiantes.</p>
+                                <div class="tech-stack">
+                                    <span>PHP</span><span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                                    <span>MySQL</span><span>Bootstrap</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary invisible-btn">Ver Proyecto</a>
+                                    <a href="https://github.com/antonsosa/Social_Track-PHP.git"
+                                        class="btn btn-secondary">Código</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <img src="/img/2.jpg" alt="En construccion" class="project-image">
+                            <div class="project-info">
+                                <h3>Proyecto 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum ipsum
+                                    eget sem pulvinar condimentum.</p>
+                                <div class="tech-stack">
+                                    <span>HTML</span> <span>CSS</span><span>Python</span> <span>MySQL</span>
+                                    <span>Responsive Design</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                                    <a href="#" class="btn btn-secondary">Código</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="skills-section">
+                    <h2>Habilidades y Tecnologías Web</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-wordpress"></i>
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </section>
+                <section id="labs" class="bg-light py-5">
+                    <div class="container">
+                        <h2 class="text-center mb-4">Laboratorios IT / SOC</h2>
+                        <img src="/img/2.jpg" alt="En construccion" sizes="(100vw)" class="img-fluid mb-4">
+                        <div class="lab-card">
+                            <button class="lab-toggle">Montaje de VMs para Prácticas IT/SOC</button>
+                            <div class="lab-content hidden">
+                                <p><strong>🧠 Objetivo:</strong><br>
+                                    Diseñar y configurar un entorno virtualizado para prácticas técnicas orientadas a
+                                    infraestructura IT
+                                    y simulaciones básicas de seguridad ofensiva/defensiva. Este laboratorio sirve como
+                                    base para pruebas
+                                    de escaneo, automatización, gestión de políticas y simulación de redes corporativas.
+                                </p>
+
+                                <p><strong>🛠️ Herramientas utilizadas:</strong><br>
+                                    VirtualBox, Windows Server 2022, Windows 10, Kali Linux, Ubuntu Server, PowerShell,
+                                    Nmap</p>
+
+                                <p><strong>📸 Capturas:</strong></p>
+                                <ul>
+                                    <li><strong>Creación de VM en VirtualBox</strong><br>
+                                        <img src="/img/1-VMs Intalacion 1.png" alt="Configuración inicial de VM" />
+                                        <p>Se definió el nombre, carpeta de almacenamiento, ISO de Windows Server 2022 y
+                                            tipo de sistema operativo. Se optó por instalación manual para mayor
+                                            control.</p>
+                                        <br>
+                                        <img src="/img/1-VMs Intalacion 2.png" alt="Asignación de recursos a VM" />
+                                        <p>Se asignaron 3072 MB de RAM, 2 núcleos de CPU y 50 GB de disco, suficientes
+                                            para prácticas de dominio y servicios básicos.</p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Configuración de red interna en VirtualBox</strong><br>
+                                        <img src="/img/1-VMs Intalacion 3.png" alt="Configuración de red interna" />
+                                        <p>Se habilitó el adaptador de red y se configuró como <strong>Red
+                                                interna</strong> con el nombre <code>RedLabNueva</code>.
+                                            Esta configuración permite la comunicación entre las VMs sin acceso externo,
+                                            simulando una red corporativa aislada.<br>
+                                            <strong>ACTUALIZACIÓN</strong> - Esta corrección fue clave para resolver
+                                            problemas posteriores de resolución DNS y conectividad entre el servidor y
+                                            los clientes.
+                                        </p>
+                                        <br>
+                                    </li>
+
+                                    <li><strong>Instalación de Windows Server 2022</strong><br>
+                                        <img src="/img/1-VMs Intalacion 4.png" alt="Arranque desde ISO" />
+                                        <p>La VM inicia correctamente desde la ISO oficial de evaluación en español.</p>
+                                        <br>
+                                        <img src="/img/1-VMs Intalacion 5.png" alt="Selección de edición" />
+                                        <p>Se seleccionó <strong>Windows Server 2022 Standard con GUI</strong> para
+                                            facilitar la administración visual y configuración de roles.</p>
+                                        <br>
+                                        <img src="/img/1-VMs Intalacion 6.png" alt="Particionado del disco" />
+                                        <p>Se creó un volumen principal de 50 GB, suficiente para prácticas de AD, GPOs
+                                            y servicios básicos.</p>
+                                        <br>
+                                        <img src="/img/1-VMs Intalacion 7.png" alt="Instalación en progreso" />
+                                        <p>Instalación en progreso sin errores, confirmando compatibilidad del
+                                            entorno virtual.</p>
+                                        <br>
+                                        <img src="/img/1-VMs Intalacion 8.png" alt="Pantalla de login" />
+                                        <p>Primera pantalla de inicio tras instalación. Se procede a configurar el
+                                            sistema.</p>
+
+                                    </li>
+                                </ul>
+
+                                <p><strong>🧪 Resultado y aprendizaje obtenido:</strong><br>
+                                    Aprendí a montar un entorno virtualizado completo para prácticas técnicas.
+                                    Comprendí la interacción entre servicios como DHCP, DNS y Active Directory.
+                                    Simulé escaneos internos y analicé resultados con herramientas como Nmap.
+                                    Automatizé tareas administrativas con PowerShell, integrando conocimientos de
+                                    infraestructura
+                                    y seguridad en un entorno controlado.</p>
+                            </div>
+                        </div>
+                        <div class="lab-card">
+                            <button class="lab-toggle">Configuración de Active Directory desde cero</button>
+                            <div class="lab-content hidden">
+                                <p><strong>🧠 Objetivo:</strong><br>
+                                    Implementar y validar un entorno de <strong>Active Directory</strong> desde cero en
+                                    Windows Server 2022, simulando una infraestructura corporativa con control de
+                                    identidad, autenticación centralizada y estructura organizativa. Este laboratorio
+                                    establece la base para la gestión de usuarios, aplicación de políticas (GPOs), y
+                                    prácticas de seguridad defensiva en red local.
+                                </p>
+
+                                <p><strong>🛠️ Herramientas utilizadas:</strong><br>
+                                    VirtualBox, Windows Server 2022, Windows 10, Active Directory Users and Computers
+                                    (ADUC), PowerShell, CMD
+                                </p>
+                                <p><strong>📸 Capturas:</strong></p>
+                                <ul>
+                                    <li><strong>Instalación del rol AD DS</strong><br>
+                                        <img src="/img/2-AD Config 1.png" alt="Server Manager con rol AD DS activo" />
+                                        <p>Desde el <strong>Administrador del servidor</strong>, se confirma que el rol
+                                            <code>Active Directory Domain Services</code> está instalado y operativo en
+                                            el
+                                            servidor <code>WIN-A40J1L1PU1T</code> con IP <code>192.168.10.10</code>.
+                                            Esta
+                                            configuración es esencial para la gestión de identidad y acceso en el
+                                            entorno de
+                                            laboratorio.
+                                        </p>
+                                    </li>
+                                    <li><strong>Configuración del dominio Active Directory</strong><br>
+                                        <img src="/img/2-AD Config 2.png"
+                                            alt="Propiedades del dominio empresa.local en ADUC" />
+                                        <p>Se creó el dominio <code>empresa.local</code> con nivel funcional
+                                            <strong>Windows
+                                                Server 2016</strong>, compatible con políticas avanzadas y servicios de
+                                            replicación. La descripción técnica indica que el entorno está diseñado para
+                                            prácticas de administración y seguridad.
+                                        </p>
+                                    </li>
+
+                                    <li><strong>Estructura organizativa en Active Directory</strong><br>
+                                        <img src="/img/2-AD Config 3.png" alt="Vista de OU y usuarios en ADUC" />
+                                        <p>Se creó una estructura personalizada en Active Directory con unidades
+                                            organizativas (OU) como <code>Usuarios</code>, <code>Equipos</code> y
+                                            <code>TI</code>. Dentro de estas se gestionan usuarios y grupos de
+                                            seguridad,
+                                            simulando una red corporativa segmentada por funciones.
+                                        </p>
+                                    </li>
+
+                                    <li><strong>Unión del cliente Windows 10 al dominio</strong><br>
+                                        <img src="/img/2-AD Config 4.png"
+                                            alt="Cliente unido al dominio empresa.local" />
+                                        <p>El equipo <code>DESKTOP-UHGP23N</code> fue unido exitosamente al dominio
+                                            <code>empresa.local</code>. Esta unión permite la autenticación
+                                            centralizada,
+                                            aplicación de políticas de grupo (GPOs) y validación de conectividad con el
+                                            controlador de dominio.
+                                        </p>
+                                    </li>
+
+                                    <li><strong>Validación de identidad y conectividad en el dominio</strong><br>
+                                        <img src="/img/2-AD Config 5.png"
+                                            alt="Comando whoami y ping al DC desde cliente Windows 10" />
+                                        <p>Desde el cliente <code>DESKTOP-UHGP23N</code>, se ejecutaron los comandos
+                                            <code>whoami</code> y <code>ping</code> para validar la autenticación y
+                                            conectividad con el controlador de dominio <code>192.168.10.10</code>. El
+                                            resultado confirma que el usuario está correctamente vinculado al dominio
+                                            <code>empresa.local</code> y que la red interna está operativa.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p><strong>🧪 Resultado y aprendizaje obtenido:</strong><br>
+                                    Aprendí a implementar y validar un entorno de <strong>Active Directory</strong>
+                                    desde cero, configurando el rol AD DS, creando un dominio funcional y estructurando
+                                    unidades organizativas con usuarios y grupos personalizados. Comprendí el proceso de
+                                    unión de clientes al dominio, verifiqué la autenticación centralizada y confirmé la
+                                    conectividad entre equipos. Este laboratorio fortaleció mi comprensión sobre la
+                                    gestión de identidad, control de acceso y preparación de entornos corporativos para
+                                    futuras políticas y automatización.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="lab-card">
+                            <button class="lab-toggle">Configuración de DHCP/DNS en Windows Server</button>
+                            <div class="lab-content hidden">
+                                <p><strong>Objetivo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.<br>
+                                    <strong>Herramientas:</strong> VLorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </p>
+                                <!-- Aquí irán tus capturas, documentación y resultados -->
+                            </div>
+                        </div>
+                        <div class="lab-card">
+                            <button class="lab-toggle">Aplicación de GPOs con filtrado avanzado</button>
+                            <div class="lab-content hidden">
+                                <p><strong>Objetivo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.<br>
+                                    <strong>Herramientas:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </p>
+                                <!-- Aquí irán tus capturas, documentación y resultados -->
+                            </div>
+                        </div>
+                        <div class="lab-card">
+                            <button class="lab-toggle">Hardening básico de Windows Server</button>
+                            <div class="lab-content hidden">
+                                <p><strong>Objetivo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.<br>
+                                    <strong>Herramientas:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </p>
+                                <!-- Aquí irán tus capturas, documentación y resultados -->
+                            </div>
+                        </div>
+                        <div class="lab-card">
+                            <button class="lab-toggle">Automatización con PowerShell</button>
+                            <div class="lab-content hidden">
+                                <p><strong>Objetivo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.<br>
+                                    <strong>Herramientas:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </p>
+                                <!-- Aquí irán tus capturas, documentación y resultados -->
+                            </div>
+                        </div>
+                        <div class="lab-card">
+                            <button class="lab-toggle">Simulación de escaneos con Nmap y Trivy</button>
+                            <div class="lab-content hidden">
+                                <p><strong>Objetivo:</strong>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.<br>
+                                    <strong>Herramientas:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </p>
+                                <!-- Aquí irán tus capturas, documentación y resultados -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="documentacion" class="py-5">
+                    <div class="container">
+                        <h2 class="text-center mb-4">Documentación Técnica</h2>
+                        <img src="/img/2.jpg" alt="En construccion" sizes="(100vw)" class="img-fluid mb-4">
+                        <p>En esta sección encontrarás capturas, explicaciones paso a paso y análisis de cada práctica
+                            realizada. Ideal para entrevistas y revisión técnica.</p>
+                        <a href="#" class="btn btn-outline-dark">Ver documentación completa</a>
+                    </div>
+                </section>
+                <section id="contacto" class="text-white py-5">
+                    <div class="container text-center">
+                        <h2>Contacto</h2>
+                        <p>¿Quieres colaborar o revisar mi trabajo? Escríbeme.</p>
+                        <a href="mailto:tuemail@ejemplo.com" class="btn btn-light">Enviar correo</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="right-filler"></div>
+
     </div>
     <footer class="footer">
         <div class="footer-links">
@@ -159,5 +384,14 @@
         <p>Antonio Sosa - IT / DEV</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.lab-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('hidden');
+            });
+        });
+    </script>
 </body>
+
 </html>
