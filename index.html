@@ -100,6 +100,7 @@
                     </div>
                 </section>
                 <section class="skills-section">
+                    <!-- Iconos de habilidades y tec -->
                     <h2>Habilidades y Tecnologías Web</h2>
                     <div class="skills-grid">
                         <div class="skill-item">
@@ -143,7 +144,8 @@
                         <div class="lab-card">
                             <button class="lab-toggle">Montaje de VMs para Prácticas IT/SOC</button>
                             <div class="lab-content hidden">
-                                <p><strong>🧠 Objetivo:</strong><br>
+                                <!-- Capturas, documentación y resultados -->
+                                <p><strong>Objetivo:</strong><br>
                                     Diseñar y configurar un entorno virtualizado para prácticas técnicas orientadas a
                                     infraestructura IT
                                     y simulaciones básicas de seguridad ofensiva/defensiva. Este laboratorio sirve como
@@ -155,23 +157,25 @@
                                     VirtualBox, Windows Server 2022, Windows 10, Kali Linux, Ubuntu Server, PowerShell,
                                     Nmap</p>
 
-                                <p><strong>📸 Capturas:</strong></p>
                                 <ul>
                                     <li><strong>Creación de VM en VirtualBox</strong><br>
-                                        <img src="/img/Labs/VMs/1-VMs Intalacion 1.png" alt="Configuración inicial de VM"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 1.png"
+                                            alt="Configuración inicial de VM"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se definió el nombre, carpeta de almacenamiento, ISO de Windows Server 2022 y
                                             tipo de sistema operativo. Se optó por instalación manual para mayor
                                             control.</p>
                                         <br>
-                                        <img src="/img/Labs/VMs/1-VMs Intalacion 2.png" alt="Asignación de recursos a VM"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 2.png"
+                                            alt="Asignación de recursos a VM"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se asignaron 3072 MB de RAM, 2 núcleos de CPU y 50 GB de disco, suficientes
                                             para prácticas de dominio y servicios básicos.</p>
                                         <br>
                                     </li>
                                     <li><strong>Configuración de red interna en VirtualBox</strong><br>
-                                        <img src="/img/Labs/VMs/1-VMs Intalacion 3.png" alt="Configuración de red interna"
+                                        <img src="/img/Labs/VMs/1-VMs Intalacion 3.png"
+                                            alt="Configuración de red interna"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se habilitó el adaptador de red y se configuró como <strong>Red
                                                 interna</strong> con el nombre <code>RedLabNueva</code>.
@@ -183,36 +187,53 @@
                                         </p>
                                         <br>
                                     </li>
-
                                     <li><strong>Instalación de Windows Server 2022</strong><br>
-                                        <img src="/img/Labs/VMs/1-VMs Intalacion 4.png" alt="Arranque desde ISO"
-                                            style="max-width: 100%; height: auto; width: 720px;" />
-                                        <p>La VM inicia correctamente desde la ISO oficial de evaluación en español.</p>
-                                        <br>
-                                        <img src="/img/Labs/VMs/1-VMs Intalacion 5.png" alt="Selección de edición"
-                                            style="max-width: 100%; height: auto; width: 720px;" />
-                                        <p>Se seleccionó <strong>Windows Server 2022 Standard con GUI</strong> para
-                                            facilitar la administración visual y configuración de roles.</p>
-                                        <br>
-                                        <img src="/img/Labs/VMs/1-VMs Intalacion 6.png" alt="Particionado del disco"
-                                            style="max-width: 100%; height: auto; width: 720px;" />
-                                        <p>Se creó un volumen principal de 50 GB, suficiente para prácticas de AD, GPOs
-                                            y servicios básicos.</p>
-                                        <br>
-                                        <img src="/img/Labs/VMs/1-VMs Intalacion 7.png" alt="Instalación en progreso"
-                                            style="max-width: 100%; height: auto; width: 720px;" />
-                                        <p>Instalación en progreso sin errores, confirmando compatibilidad del
-                                            entorno virtual.</p>
-                                        <br>
-                                        <img src="/img/Labs/VMs/1-VMs Intalacion 8.png" alt="Pantalla de login"
-                                            style="max-width: 100%; height: auto; width: 720px;" />
-                                        <p>Primera pantalla de inicio tras instalación. Se procede a configurar el
-                                            sistema.</p>
-
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Labs/VMs/1-VMs Intalacion 4.png" alt="Arranque desde ISO"
+                                                    style="max-width: 100%; height: auto; width: 720px;" />
+                                                <p>La VM inicia correctamente desde la ISO oficial de evaluación en
+                                                    español.</p>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Labs/VMs/1-VMs Intalacion 5.png"
+                                                    alt="Selección de edición"
+                                                    style="max-width: 100%; height: auto; width: 720px;" />
+                                                <p>Se seleccionó <strong>Windows Server 2022 Standard con GUI</strong>
+                                                    para
+                                                    facilitar la administración visual y configuración de roles.</p>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Labs/VMs/1-VMs Intalacion 6.png"
+                                                    alt="Particionado del disco"
+                                                    style="max-width: 100%; height: auto; width: 720px;" />
+                                                <p>Se creó un volumen principal de 50 GB, suficiente para prácticas de
+                                                    AD, GPOs
+                                                    y servicios básicos.</p>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Labs/VMs/1-VMs Intalacion 7.png"
+                                                    alt="Instalación en progreso"
+                                                    style="max-width: 100%; height: auto; width: 720px;" />
+                                                <p>Instalación en progreso sin errores, confirmando compatibilidad del
+                                                    entorno virtual.</p>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <img src="/img/Labs/VMs/1-VMs Intalacion 8.png" alt="Pantalla de login"
+                                                    style="max-width: 100%; height: auto; width: 720px;" />
+                                                <p>Primera pantalla de inicio tras instalación. Se procede a configurar
+                                                    el
+                                                    sistema.</p>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
 
-                                <p><strong>🧪 Resultado y aprendizaje obtenido:</strong><br>
+                                <p><strong>Resultado y aprendizaje obtenido:</strong><br>
                                     Aprendí a montar un entorno virtualizado completo para prácticas técnicas.
                                     Comprendí la interacción entre servicios como DHCP, DNS y Active Directory.
                                     Simulé escaneos internos y analicé resultados con herramientas como Nmap.
@@ -224,7 +245,8 @@
                         <div class="lab-card">
                             <button class="lab-toggle">Configuración de Active Directory desde cero</button>
                             <div class="lab-content hidden">
-                                <p><strong>🧠 Objetivo:</strong><br>
+                                <!-- Capturas, documentación y resultados -->
+                                <p><strong>Objetivo:</strong><br>
                                     Implementar y validar un entorno de <strong>Active Directory</strong> desde cero en
                                     Windows Server 2022, simulando una infraestructura corporativa con control de
                                     identidad, autenticación centralizada y estructura organizativa. Este laboratorio
@@ -236,10 +258,10 @@
                                     VirtualBox, Windows Server 2022, Windows 10, Active Directory Users and Computers
                                     (ADUC), PowerShell, CMD
                                 </p>
-                                <p><strong>📸 Capturas:</strong></p>
                                 <ul>
                                     <li><strong>Instalación del rol AD DS</strong><br>
-                                        <img src="/img/Labs/AD/2-AD Config 1.png" alt="Server Manager con rol AD DS activo"
+                                        <img src="/img/Labs/AD/2-AD Config 1.png"
+                                            alt="Server Manager con rol AD DS activo"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Desde el <strong>Administrador del servidor</strong>, se confirma que el rol
                                             <code>Active Directory Domain Services</code> está instalado y operativo en
@@ -250,6 +272,7 @@
                                             entorno de
                                             laboratorio.
                                         </p>
+                                        <br>
                                     </li>
                                     <li><strong>Configuración del dominio Active Directory</strong><br>
                                         <img src="/img/Labs/AD/2-AD Config 2.png"
@@ -261,6 +284,7 @@
                                             replicación. La descripción técnica indica que el entorno está diseñado para
                                             prácticas de administración y seguridad.
                                         </p>
+                                        <br>
                                     </li>
 
                                     <li><strong>Estructura organizativa en Active Directory</strong><br>
@@ -272,10 +296,12 @@
                                             seguridad,
                                             simulando una red corporativa segmentada por funciones.
                                         </p>
+                                        <br>
                                     </li>
 
                                     <li><strong>Unión del cliente Windows 10 al dominio</strong><br>
-                                        <img src="/img/Labs/AD/2-AD Config 4.png" alt="Cliente unido al dominio empresa.local"
+                                        <img src="/img/Labs/AD/2-AD Config 4.png"
+                                            alt="Cliente unido al dominio empresa.local"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>El equipo <code>DESKTOP-UHGP23N</code> fue unido exitosamente al dominio
                                             <code>empresa.local</code>. Esta unión permite la autenticación
@@ -283,6 +309,7 @@
                                             aplicación de políticas de grupo (GPOs) y validación de conectividad con el
                                             controlador de dominio.
                                         </p>
+                                        <br>
                                     </li>
 
                                     <li><strong>Validación de identidad y conectividad en el dominio</strong><br>
@@ -295,9 +322,10 @@
                                             resultado confirma que el usuario está correctamente vinculado al dominio
                                             <code>empresa.local</code> y que la red interna está operativa.
                                         </p>
+                                        <br>
                                     </li>
                                 </ul>
-                                <p><strong>🧪 Resultado y aprendizaje obtenido:</strong><br>
+                                <p><strong>Resultado y aprendizaje obtenido:</strong><br>
                                     Aprendí a implementar y validar un entorno de <strong>Active Directory</strong>
                                     desde cero, configurando el rol AD DS, creando un dominio funcional y estructurando
                                     unidades organizativas con usuarios y grupos personalizados. Comprendí el proceso de
@@ -312,7 +340,8 @@
                         <div class="lab-card">
                             <button class="lab-toggle">Configuración de DHCP/DNS en Windows Server</button>
                             <div class="lab-content hidden">
-                                <p><strong>🧠 Objetivo:</strong><br>
+                                <!-- Capturas, documentación y resultados -->
+                                <p><strong>Objetivo:</strong><br>
                                     Configurar y validar los servicios <strong>DHCP</strong> y <strong>DNS</strong> en
                                     Windows Server 2022 para automatizar la asignación de direcciones IP y garantizar la
                                     resolución de nombres dentro del dominio <code>empresa.local</code>. Este
@@ -321,24 +350,26 @@
                                     escaneos internos.
                                 </p>
 
-                                <p><strong>🛠️ Herramientas utilizadas:</strong><br>
+                                <p><strong>Herramientas utilizadas:</strong><br>
                                     VirtualBox, Windows Server 2022, Windows 10, Consola DHCP, Consola DNS, CMD,
                                     PowerShell
                                 </p>
-                                <p><strong>📸 Capturas:</strong></p>
                                 <ul>
                                     <li><strong>Instalación del rol DHCP en Windows Server</strong><br>
-                                        <img src="/img/Labs/DHCP/3-DHCP Config 1.png" alt="DHCP activo en Server Manager"
+                                        <img src="/img/Labs/DHCP/3-DHCP Config 1.png"
+                                            alt="DHCP activo en Server Manager"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se instaló el rol <code>DHCP Server</code> en el equipo
                                             <code>WIN-A2011HP1MTI</code> con IP <code>192.168.1.60</code>. El servicio
                                             está activo y genera eventos informativos, lo que indica que está listo para
                                             gestionar la asignación dinámica de direcciones IP en la red interna.
                                         </p>
+                                        <br>
                                     </li>
 
                                     <li><strong>Configuración del ámbito DHCP</strong><br>
-                                        <img src="/img/Labs/DHCP/3-DHCP Config 2.png" alt="Ámbito RedInterna en consola DHCP"
+                                        <img src="/img/Labs/DHCP/3-DHCP Config 2.png"
+                                            alt="Ámbito RedInterna en consola DHCP"
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se configuró el ámbito <code>RedInterna</code> en el servidor DHCP,
                                             definiendo el rango de direcciones <code>192.168.10.100</code> a
@@ -346,6 +377,7 @@
                                                 días</strong>. Esta configuración permite la asignación automática de
                                             IPs a los clientes dentro de la red <code>empresa.local</code>.
                                         </p>
+                                        <br>
                                     </li>
                                     <li><strong>Asignación automática de IP al cliente</strong><br>
                                         <img src="/img/Labs/DHCP/3-DHCP Config 3.png"
@@ -358,6 +390,7 @@
                                             configurado), confirmando que el servicio DHCP está funcionando
                                             correctamente y que la configuración DNS fue aplicada.
                                         </p>
+                                        <br>
                                     </li>
                                     <li><strong>Instalación del rol DNS en Windows Server</strong><br>
                                         <img src="/img/Labs/DHCP/3-DHCP Config 4.png" alt="Panel DNS en Server Manager"
@@ -369,6 +402,7 @@
                                             <code>empresa.local</code>, facilitando la conectividad entre clientes y
                                             servidores.
                                         </p>
+                                        <br>
                                     </li>
                                     <li><strong>Validación de resolución DNS con nslookup</strong><br>
                                         <img src="/img/Labs/DHCP/3-DHCP Config 5.png"
@@ -381,6 +415,7 @@
                                             correctamente a la IP <code>192.168.10.10</code>, confirmando que el
                                             servicio DNS está operativo.
                                         </p>
+                                        <br>
                                     </li>
                                     <li><strong>Registro dinámico del cliente en DNS</strong><br>
                                         <img src="/img/Labs/DHCP/3-DHCP Config 6.png"
@@ -391,54 +426,145 @@
                                             El registro tipo <strong>A</strong> contiene la IP
                                             <code>192.168.10.12</code> y el nombre completo
                                             <code>DESKTOP-UJ6P3AN.win-adjapi.lujait</code>, confirmando que los
-                                            servicios DHCP y DNS están integrados correctamente.</p>
+                                            servicios DHCP y DNS están integrados correctamente.
+                                        </p>
+                                        <br>
                                     </li>
                                 </ul>
-
+                                <p><strong>Resultado y aprendizaje obtenido:</strong><br>
+                                    Aprendí a configurar y validar los roles de <strong>DHCP</strong> y
+                                    <strong>DNS</strong> en un entorno Windows Server, asegurando la asignación
+                                    automática de direcciones IP y la resolución de nombres dentro del dominio.
+                                    Implementé un ámbito DHCP con parámetros personalizados, incluyendo puerta de
+                                    enlace, DNS y duración de concesión. Verifiqué la correcta resolución de nombres
+                                    mediante pruebas de conectividad y comandos como <code>nslookup</code> y
+                                    <code>ping</code>. Este laboratorio fortaleció mi comprensión sobre la
+                                    infraestructura de red, la interoperabilidad entre servicios y la preparación de
+                                    entornos dinámicos para clientes unidos al dominio.
+                                </p>
                             </div>
                         </div>
                         <div class="lab-card">
-                            <button class="lab-toggle">Aplicación de GPOs con filtrado avanzado</button>
+                            <button class="lab-toggle">Creacion de OU y aplicación de GPOs</button>
                             <div class="lab-content hidden">
-                                <p><strong>Objetivo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.<br>
-                                    <strong>Herramientas:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
+                                <!-- Capturas, documentación y resultados -->
+                                <p><strong>Objetivo:</strong><br>
+                                    Aplicar políticas de grupo (GPOs) en Windows Server 2022 utilizando <strong>filtrado
+                                        avanzado</strong> por seguridad y WMI, para controlar con precisión qué usuarios
+                                    o equipos reciben configuraciones específicas. Este enfoque permite segmentar
+                                    políticas dentro de una misma OU, optimizando el control y la seguridad en entornos
+                                    IT/SOC.</p>
+                                <ul>
+                                    <li><strong>Reestructuración de Active Directory</strong><br>
+                                        <img src="/img/Labs/GPO/4-GPO 0.png"
+                                            alt="Creación de nuevas OUs por departamento" 
+                                            style="max-width: 100%; height: auto; width: 720px;"/>
+                                        <p>Antes de aplicar GPOs con filtrado avanzado, se reestructuró el entorno de
+                                            Active Directory. Se crearon nuevas OUs por departamento
+                                            (<code>VentasDept</code>, <code>RRHHDept</code>, etc.) para mejorar la
+                                            segmentación de políticas. Esta decisión se tomó tras detectar conflictos en
+                                            el filtrado dentro de una OU única con múltiples grupos.</p>
+                                        <br>
+                                    </li>
+
+                                    <li><strong>Creación de GPO personalizado</strong><br>
+                                        <img src="/img/Labs/GPO/4-GPO 1.png"
+                                            alt="Creación de GPO Bloqueo_Panel_deControl" 
+                                            style="max-width: 100%; height: auto; width: 720px;"/>
+                                        <p>Se creó un nuevo objeto de directiva de grupo (GPO) llamado
+                                            <code>Bloqueo_Panel_deControl</code> desde la consola <strong>Administración
+                                                de directivas de grupo</strong>. Este GPO será utilizado para restringir
+                                            el acceso al Panel de Control en usuarios específicos mediante filtrado
+                                            avanzado.
+                                        </p>
+                                        <br>
+                                    </li>
+
+                                    <li><strong>Edición de GPO para bloqueo del Panel de Control</strong><br>
+                                        <img src="/img/Labs/GPO/4-GPO 2.png"
+                                            alt="Configuración de la política para bloquear el Panel de Control" 
+                                            style="max-width: 100%; height: auto; width: 720px;"/>
+                                        <p>Se editó la GPO <code>Bloqueo_Panel_deControl</code> en la ruta
+                                            <strong>Configuración de Usuario → Plantillas administrativas → Panel de
+                                                control</strong>, habilitando la opción
+                                            <code>Prohibir el acceso a Configuración de PC y al Panel de control</code>.
+                                            Esta configuración impide que los usuarios de <code>Dept_Ventas</code>
+                                            accedan a herramientas de configuración del sistema, reforzando la seguridad
+                                            y el control administrativo.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Verificación de aplicación de GPO</strong><br>
+                                        <p>Se verificó la aplicación de la GPO <code>Bloqueo_Panel_deControl</code>
+                                            mediante dos métodos:</p>
+                                        <ul>
+                                            <li>
+                                                <p><strong>Visual:</strong> </p>
+                                                <img src="/img/Labs/GPO/4-GPO 3.png"
+                                                    alt="Mensaje de bloqueo del Panel de Control" 
+                                                    style="max-width: 100%; height: auto; width: 720px;"/>
+                                                <p>El usuario <code>Rodolfo Pineda</code> intentó
+                                                    abrir el Panel de Control y recibió un mensaje indicando que una
+                                                    política impide la acción.
+                                                </p>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p><strong>Técnico:</strong> </p>
+                                                <img src="/img/Labs/Documentacion/Documentacion 3.png"
+                                                    alt="Resultado de gpresult mostrando GPO aplicada" 
+                                                    style="max-width: 100%; height: auto; width: 720px;"/>
+                                                <p>El comando <code>gpresult /R</code> confirmó
+                                                    que la GPO está aplicada correctamente al usuario.
+                                                </p>
+                                                <br>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p><strong>Resultado y aprendizaje obtenido:</strong><br>Se logró crear una estructura
+                                    de OUs segmentada por departamento, vinculando la GPO
+                                    <code>Bloqueo_Panel_deControl</code> exclusivamente a <code>Dept_Ventas</code>
+                                    mediante configuración de usuario. Se verificó su aplicación efectiva mediante
+                                    prueba visual y técnica, confirmando que los usuarios afectados no pueden acceder al
+                                    Panel de Control, sin impactar a usuarios técnicos como IT. Esta práctica refuerza
+                                    el uso estratégico de GPOs, la importancia de una estructura lógica en Active
+                                    Directory y la validación precisa de políticas aplicadas.
                                 </p>
-                                <!-- Aquí irán tus capturas, documentación y resultados -->
                             </div>
                         </div>
                         <div class="lab-card">
                             <button class="lab-toggle">Hardening básico de Windows Server</button>
                             <div class="lab-content hidden">
-                                <p><strong>Objetivo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.<br>
-                                    <strong>Herramientas:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
+                                <!-- Capturas, documentación y resultados -->
+                                <p><strong>Objetivo:</strong> Aplicar medidas de endurecimiento (hardening) en un
+                                    entorno Windows Server para mejorar la seguridad base del sistema.<br>
                                 </p>
-                                <!-- Aquí irán tus capturas, documentación y resultados -->
+
                             </div>
                         </div>
                         <div class="lab-card">
                             <button class="lab-toggle">Automatización con PowerShell</button>
                             <div class="lab-content hidden">
+                                <!-- Capturas, documentación y resultados -->
                                 <p><strong>Objetivo:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.<br>
                                     <strong>Herramientas:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.
                                 </p>
-                                <!-- Aquí irán tus capturas, documentación y resultados -->
+
                             </div>
                         </div>
                         <div class="lab-card">
                             <button class="lab-toggle">Simulación de escaneos con Nmap y Trivy</button>
                             <div class="lab-content hidden">
+                                <!-- Capturas, documentación y resultados -->
                                 <p><strong>Objetivo:</strong>Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.<br>
                                     <strong>Herramientas:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit.
                                 </p>
-                                <!-- Aquí irán tus capturas, documentación y resultados -->
+
                             </div>
                         </div>
                     </div>
@@ -447,9 +573,57 @@
                     <div class="container">
                         <h2 class="text-center mb-4">Documentación Técnica</h2>
                         <img src="/img/2.jpg" alt="En construccion" sizes="(100vw)" class="img-fluid mb-4">
-                        <p>En esta sección encontrarás capturas, explicaciones paso a paso y análisis de cada práctica
-                            realizada. Ideal para entrevistas y revisión técnica.</p>
-                        <a href="#" class="btn btn-outline-dark">Ver documentación completa</a>
+                        <p>En esta sección encontrarás capturas, explicaciones y análisis de eventos ocurridos en
+                            algunas prácticas realizada.</p><br>
+
+                        <ul>
+
+                            <li><strong>Estructura inicial de Active Directory</strong><br>
+                                <img src="/img/Labs/Documentacion/Documentacion 1.png"
+                                    alt="Estructura actual de OUs en AD antes de reestructuración" 
+                                    style="max-width: 100%; height: auto; width: 720px;"/>
+                                <p>La estructura inicial del dominio <code>empresa.local</code> contenía una única OU
+                                    <code>UsuariosEmpresa</code> con usuarios de distintos departamentos agrupados por
+                                    <strong>grupos de seguridad</strong>. Esta configuración generó conflictos al
+                                    aplicar GPOs con filtrado avanzado, ya que las políticas no se aplicaban
+                                    correctamente por herencia y permisos.
+                                </p>
+
+                                <p><strong>Nota:</strong> Aunque las OUs <code>UsuariosEmpresa</code> y
+                                    <code>Ventas_Dept</code>
+                                    aparecen debajo del contenedor <code>Users</code> en la vista alfabética, en
+                                    realidad están
+                                    ubicadas directamente en la raíz del dominio <code>empresa.local</code>. Esta
+                                    estructura
+                                    permite vincular GPOs directamente y aplicar políticas segmentadas por departamento.
+                                </p>
+                                <br>
+                            </li>
+                            <li><strong>Estructura actual de Active Directory</strong><br>
+                                <img src="/img/Labs/Documentacion/Documentacion 2.png"
+                                    alt="Estructura actual de OUs en AD depues de reestructuración" 
+                                    style="max-width: 100%; height: auto; width: 720px;"/>
+                                <p>Se decidió reestructurar las OUs para mejorar
+                                    la administración, auditoría y segmentación de políticas.</p>
+                            </li>
+
+                            <li><strong>Reutilización de GPO en múltiples OUs</strong><br>
+                                <p>La GPO <code>Bloqueo_Panel_deControl</code> fue vinculada tanto a
+                                    <code>Dept_Ventas</code> como a <code>Dept_RRHH</code>, ya que ambas
+                                    unidades requieren la misma restricción. Esta estrategia permite mantener
+                                    una configuración centralizada y reducir la cantidad de objetos de directiva
+                                    en el dominio.
+                                </p>
+                            </li>
+                            <li><strong>Aplicación de GPO por usuario</strong><br>
+                                <p>La política <code>Bloqueo_Panel_deControl</code> se aplicó mediante
+                                    <strong>Configuración de Usuario</strong>, lo que garantiza que los usuarios de
+                                    <code>Dept_Ventas</code> no puedan acceder al Panel de Control, independientemente
+                                    del equipo que utilicen. Esta estrategia permite mantener el acceso disponible para
+                                    usuarios técnicos como IT, que no están dentro del alcance de la GPO.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </section>
                 <section id="contacto" class="text-white py-5">
@@ -472,12 +646,17 @@
         </div>
         <p>Antonio Sosa - IT / DEV</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.querySelectorAll('.lab-toggle').forEach(button => {
             button.addEventListener('click', () => {
+                // Oculta todos los labs
+                document.querySelectorAll('.lab-content').forEach(content => {
+                    content.classList.add('hidden');
+                });
+
+                // Muestra solo el contenido asociado al botón clickeado
                 const content = button.nextElementSibling;
-                content.classList.toggle('hidden');
+                content.classList.remove('hidden');
             });
         });
     </script>
