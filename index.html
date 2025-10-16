@@ -457,8 +457,8 @@
                                 <ul>
                                     <li><strong>Reestructuración de Active Directory</strong><br>
                                         <img src="/img/Labs/GPO/4-GPO 0.png"
-                                            alt="Creación de nuevas OUs por departamento" 
-                                            style="max-width: 100%; height: auto; width: 720px;"/>
+                                            alt="Creación de nuevas OUs por departamento"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Antes de aplicar GPOs con filtrado avanzado, se reestructuró el entorno de
                                             Active Directory. Se crearon nuevas OUs por departamento
                                             (<code>VentasDept</code>, <code>RRHHDept</code>, etc.) para mejorar la
@@ -469,8 +469,8 @@
 
                                     <li><strong>Creación de GPO personalizado</strong><br>
                                         <img src="/img/Labs/GPO/4-GPO 1.png"
-                                            alt="Creación de GPO Bloqueo_Panel_deControl" 
-                                            style="max-width: 100%; height: auto; width: 720px;"/>
+                                            alt="Creación de GPO Bloqueo_Panel_deControl"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se creó un nuevo objeto de directiva de grupo (GPO) llamado
                                             <code>Bloqueo_Panel_deControl</code> desde la consola <strong>Administración
                                                 de directivas de grupo</strong>. Este GPO será utilizado para restringir
@@ -482,8 +482,8 @@
 
                                     <li><strong>Edición de GPO para bloqueo del Panel de Control</strong><br>
                                         <img src="/img/Labs/GPO/4-GPO 2.png"
-                                            alt="Configuración de la política para bloquear el Panel de Control" 
-                                            style="max-width: 100%; height: auto; width: 720px;"/>
+                                            alt="Configuración de la política para bloquear el Panel de Control"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se editó la GPO <code>Bloqueo_Panel_deControl</code> en la ruta
                                             <strong>Configuración de Usuario → Plantillas administrativas → Panel de
                                                 control</strong>, habilitando la opción
@@ -501,8 +501,8 @@
                                             <li>
                                                 <p><strong>Visual:</strong> </p>
                                                 <img src="/img/Labs/GPO/4-GPO 3.png"
-                                                    alt="Mensaje de bloqueo del Panel de Control" 
-                                                    style="max-width: 100%; height: auto; width: 720px;"/>
+                                                    alt="Mensaje de bloqueo del Panel de Control"
+                                                    style="max-width: 100%; height: auto; width: 720px;" />
                                                 <p>El usuario <code>Rodolfo Pineda</code> intentó
                                                     abrir el Panel de Control y recibió un mensaje indicando que una
                                                     política impide la acción.
@@ -512,8 +512,8 @@
                                             <li>
                                                 <p><strong>Técnico:</strong> </p>
                                                 <img src="/img/Labs/Documentacion/Documentacion 3.png"
-                                                    alt="Resultado de gpresult mostrando GPO aplicada" 
-                                                    style="max-width: 100%; height: auto; width: 720px;"/>
+                                                    alt="Resultado de gpresult mostrando GPO aplicada"
+                                                    style="max-width: 100%; height: auto; width: 720px;" />
                                                 <p>El comando <code>gpresult /R</code> confirmó
                                                     que la GPO está aplicada correctamente al usuario.
                                                 </p>
@@ -540,7 +540,166 @@
                                 <p><strong>Objetivo:</strong> Aplicar medidas de endurecimiento (hardening) en un
                                     entorno Windows Server para mejorar la seguridad base del sistema.<br>
                                 </p>
+                                <ul>
+                                    <li><strong>Revisión y desinstalación de roles innecesarios</strong><br>
+                                        <img src="/img/Labs/Hardening/5-Hardening 1.png"
+                                            alt="Interfaz de Server Manager mostrando roles instalados en Windows Server 2022"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Se accedió al asistente <code>Quitar roles de servidor</code> desde el
+                                            <strong>Administrador del servidor</strong> en Windows Server 2022,
+                                            ejecutándose
+                                            en Oracle VirtualBox. En la sección <strong>Roles de servidor</strong>, se
+                                            validó que la mayoría de los roles innecesarios ya estaban deshabilitados,
+                                            incluyendo servicios como <code>Fax Server</code>,
+                                            <code>Print Services</code> y
+                                            <code>Remote Desktop Services</code>.
+                                            <br><br>
+                                            Solo permanecen activos los roles esenciales para la operación de red local,
+                                            como <code>Servidor DHCP</code> y <code>Servidor DNS</code>. Esta
+                                            configuración
+                                            inicial contribuye a reducir la superficie de ataque del sistema y optimiza
+                                            el
+                                            rendimiento del servidor.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Creación de GPO para políticas de contraseña segura</strong><br>
+                                        <img src="/img/Labs/Hardening/5-Hardening 2.png"
+                                            alt="Configuración de políticas de contraseña segura en la GPO"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Se creó la directiva <code>Seguridad_Contraseña</code> desde
+                                            <strong>Group Policy Management</strong>, aplicándola a nivel de dominio. En
+                                            la ruta <strong>Configuración del equipo → Configuración de Windows →
+                                                Configuración de seguridad → Directivas de cuenta → Directiva de
+                                                contraseñas</strong>, se establecieron los siguientes parámetros:
+                                        <ul>
+                                            <li><code>Aplicar el historial de contraseñas</code>: 24 contraseñas
+                                                recordadas</li>
+                                            <li><code>Longitud mínima de la contraseña</code>: 8 caracteres
+                                                (recomendado: 12)</li>
+                                            <li><code>Requisitos de complejidad</code>: Activado</li>
+                                            <li><code>Duración máxima de la contraseña</code>: 30 días (recomendado: 60)
+                                            </li>
+                                        </ul>
+                                        Estas configuraciones fortalecen la autenticación de usuarios, reduciendo el
+                                        riesgo de accesos no autorizados por contraseñas débiles o repetidas.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Asignación de acceso remoto a usuarios técnicos</strong><br>
+                                        <img src="/img/Labs/Hardening/5-Hardening 3.png"
+                                            alt="Propiedades del usuario Josue Sosa mostrando pertenencia al grupo Usuarios del escritorio remoto"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Desde <code>Usuarios y equipos de Active Directory</code>, se
+                                            accedió a las propiedades del usuario <strong>Josue Sosa</strong> ubicado en
+                                            la unidad organizativa <code>Dept_IT</code>. En la pestaña <strong>Miembro
+                                                de</strong>, se verificó que el usuario pertenece al grupo
+                                            <code>Usuarios del escritorio remoto</code>, lo que le permite iniciar
+                                            sesión por RDP sin privilegios administrativos.
+                                            <br><br>
+                                            Esta asignación forma parte de la estrategia de endurecimiento, limitando el
+                                            acceso remoto únicamente a usuarios técnicos autorizados. Se recomienda
+                                            complementar esta configuración con una GPO que restrinja el inicio de
+                                            sesión remoto a este grupo.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Configuración de auditoría básica de eventos</strong><br>
+                                        <img src="/img/Labs/Hardening/5-Hardening 4.png"
+                                            alt="Editor de GPO mostrando configuración de auditoría básica en Windows Server"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Se creó la directiva <code>Auditoria_Seguridad</code> y se vinculó a la
+                                            unidad organizativa <strong>Dept_IT</strong>. Desde el editor de directivas,
+                                            se accedió a la ruta <strong>Configuración del equipo → Configuración de
+                                                Windows → Configuración de seguridad → Directivas locales → Directiva de
+                                                auditoría</strong>, donde se habilitaron las siguientes políticas con
+                                            auditoría de <code>Éxito</code> y <code>Error</code>:
+                                        <ul>
+                                            <li><code>Auditar eventos de inicio de sesión</code></li>
+                                            <li><code>Auditar eventos de administración de cuentas</code></li>
+                                            <li><code>Auditar el acceso a objetos</code></li>
+                                        </ul>
+                                        Estas configuraciones permiten registrar intentos de acceso, modificaciones de
+                                        cuentas y actividades sobre archivos protegidos. La auditoría básica mejora la
+                                        trazabilidad del sistema sin generar una sobrecarga excesiva de eventos.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Restricción de uso de dispositivos USB mediante GPO</strong><br>
+                                        <img src="/img/Labs/Hardening/5-Hardening 5.png"
+                                            alt="Editor de GPO mostrando políticas de acceso al almacenamiento extraíble"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Se creó la directiva <code>Restriccion_USB</code> y se vinculó a la unidad
+                                            organizativa <strong>Dept_IT</strong>. Desde el editor de directivas, se
+                                            accedió a la ruta <strong>Configuración del equipo → Plantillas
+                                                administrativas → Sistema → Acceso al almacenamiento extraíble</strong>,
+                                            donde se revisaron las políticas disponibles para restringir el uso de
+                                            dispositivos USB, discos externos y otros medios extraíbles.
+                                            <br><br>
+                                            Posteriormente, se habilitó la política
+                                            <code>Todas las clases de almacenamiento extraíble: Denegar acceso a todos</code>,
+                                            bloqueando el uso de estos dispositivos en los equipos del departamento
+                                            técnico. Esta medida refuerza la seguridad contra fugas de información y
+                                            malware.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Bloqueo del Panel de Control y Configuración para usuarios no
+                                            técnicos</strong><br>
+                                        <img src="/img/Labs/Hardening/5-Hardening 6.png"
+                                            alt="Editor de GPO mostrando política para bloquear el Panel de Control"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Se creó la directiva <code>Bloqueo_PanelControl</code> y se vinculó a la
+                                            unidad organizativa <strong>Dept_RRHH</strong>, que contiene usuarios no
+                                            técnicos. Desde el editor de directivas, se accedió a la ruta
+                                            <strong>Configuración del usuario → Plantillas administrativas → Panel de
+                                                control</strong>, habilitando la política
+                                            <code>Prohibir el acceso al Panel de control y a la configuración de PC</code>.
+                                            <br><br>
+                                            Esta medida impide que los usuarios realicen cambios en configuraciones del
+                                            sistema, mejorando el control administrativo y reduciendo riesgos
+                                            operativos. Se recomienda aplicar filtrado por grupo si la OU contiene
+                                            usuarios mixtos.
+                                            <br><br>
+                                        <p><em>🛈 Nota:</em> Esta directiva fue previamente aplicada y documentada en
+                                            la sección <strong>D - Aplicación de GPOs con filtrado avanzado</strong>,
+                                            donde se utilizó filtrado por grupo para restringir el acceso al Panel de
+                                            Control en usuarios no técnicos.</p>
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Revisión y fortalecimiento de cuentas locales</strong><br>
+                                        <img src="/img/Labs/Hardening/5-Hardening 9.png"
+                                            alt="Listado de cuentas locales en Windows Server"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
 
+                                        <p><em>Nota:</em> Este paso fue omitido en el servidor actual por tratarse de un
+                                            controlador de dominio. La revisión de cuentas se realiza desde
+                                            <strong>Usuarios y equipos de Active Directory</strong>, validando
+                                            pertenencia a grupos, privilegios y estado de las cuentas técnicas.
+                                        </p>
+                                        <br>
+                                    </li>
+                                    <li><strong>Validación de actualizaciones del sistema</strong><br>
+                                        <img src="/img/Labs/Hardening/5-Hardening 7.png"
+                                            alt="Historial de actualizaciones en Windows Server"
+                                            style="max-width: 100%; height: auto; width: 720px;" />
+                                        <p>Se detectaron actualizaciones pendientes críticas en el servidor, incluyendo
+                                            parches de seguridad y componentes de .NET Framework. Se procedió a instalar
+                                            las actualizaciones desde el módulo de Configuración, seguido de un reinicio
+                                            para aplicar los cambios.</p>
+                                        <br>
+                                        <ul>
+                                            <li>
+                                                <img src="/img/Labs/Hardening/5-Hardening 8.png"
+                                                    alt="Historial de actualizaciones en Windows Server2"
+                                                    style="max-width: 100%; height: auto; width: 720px;" />
+                                                <p>El sistema quedó actualizado y protegido contra
+                                                    vulnerabilidades conocidas.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="lab-card">
@@ -580,8 +739,8 @@
 
                             <li><strong>Estructura inicial de Active Directory</strong><br>
                                 <img src="/img/Labs/Documentacion/Documentacion 1.png"
-                                    alt="Estructura actual de OUs en AD antes de reestructuración" 
-                                    style="max-width: 100%; height: auto; width: 720px;"/>
+                                    alt="Estructura actual de OUs en AD antes de reestructuración"
+                                    style="max-width: 100%; height: auto; width: 720px;" />
                                 <p>La estructura inicial del dominio <code>empresa.local</code> contenía una única OU
                                     <code>UsuariosEmpresa</code> con usuarios de distintos departamentos agrupados por
                                     <strong>grupos de seguridad</strong>. Esta configuración generó conflictos al
@@ -601,8 +760,8 @@
                             </li>
                             <li><strong>Estructura actual de Active Directory</strong><br>
                                 <img src="/img/Labs/Documentacion/Documentacion 2.png"
-                                    alt="Estructura actual de OUs en AD depues de reestructuración" 
-                                    style="max-width: 100%; height: auto; width: 720px;"/>
+                                    alt="Estructura actual de OUs en AD depues de reestructuración"
+                                    style="max-width: 100%; height: auto; width: 720px;" />
                                 <p>Se decidió reestructurar las OUs para mejorar
                                     la administración, auditoría y segmentación de políticas.</p>
                             </li>
@@ -649,14 +808,19 @@
     <script>
         document.querySelectorAll('.lab-toggle').forEach(button => {
             button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const isVisible = !content.classList.contains('hidden');
+
                 // Oculta todos los labs
-                document.querySelectorAll('.lab-content').forEach(content => {
-                    content.classList.add('hidden');
+                document.querySelectorAll('.lab-content').forEach(c => {
+                    c.classList.add('hidden');
                 });
 
-                // Muestra solo el contenido asociado al botón clickeado
-                const content = button.nextElementSibling;
-                content.classList.remove('hidden');
+                // Si el contenido estaba oculto, lo mostramos
+                if (!isVisible) {
+                    content.classList.remove('hidden');
+                }
+                // Si ya estaba visible, lo dejamos oculto (ya se ocultó arriba)
             });
         });
     </script>
