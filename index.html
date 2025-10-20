@@ -153,9 +153,9 @@
                                     de escaneo, automatización, gestión de políticas y simulación de redes corporativas.
                                 </p>
 
-                                <p><strong>🛠️ Herramientas utilizadas:</strong><br>
-                                    VirtualBox, Windows Server 2022, Windows 10, Kali Linux, Ubuntu Server, PowerShell,
-                                    Nmap</p>
+                                <p><strong>Herramientas utilizadas:</strong><br>
+                                    VirtualBox, Windows Server 2022, Windows 10, PowerShell.
+                                </p>
 
                                 <ul>
                                     <li><strong>Creación de VM en VirtualBox</strong><br>
@@ -234,12 +234,9 @@
                                 </ul>
 
                                 <p><strong>Resultado y aprendizaje obtenido:</strong><br>
-                                    Aprendí a montar un entorno virtualizado completo para prácticas técnicas.
-                                    Comprendí la interacción entre servicios como DHCP, DNS y Active Directory.
-                                    Simulé escaneos internos y analicé resultados con herramientas como Nmap.
-                                    Automatizé tareas administrativas con PowerShell, integrando conocimientos de
-                                    infraestructura
-                                    y seguridad en un entorno controlado.</p>
+                                    Aprendí a montar y trabajar en un entorno virtualizado completo de Windows Server y un cliente 
+                                    de Windows 10 para prácticas técnicas.
+                                </p>
                             </div>
                         </div>
                         <div class="lab-card">
@@ -254,9 +251,9 @@
                                     prácticas de seguridad defensiva en red local.
                                 </p>
 
-                                <p><strong>🛠️ Herramientas utilizadas:</strong><br>
+                                <p><strong>Herramientas utilizadas:</strong><br>
                                     VirtualBox, Windows Server 2022, Windows 10, Active Directory Users and Computers
-                                    (ADUC), PowerShell, CMD
+                                    (ADUC), PowerShell, CMD.
                                 </p>
                                 <ul>
                                     <li><strong>Instalación del rol AD DS</strong><br>
@@ -333,6 +330,7 @@
                                     conectividad entre equipos. Este laboratorio fortaleció mi comprensión sobre la
                                     gestión de identidad, control de acceso y preparación de entornos corporativos para
                                     futuras políticas y automatización.
+                                        
                                 </p>
 
                             </div>
@@ -344,10 +342,7 @@
                                 <p><strong>Objetivo:</strong><br>
                                     Configurar y validar los servicios <strong>DHCP</strong> y <strong>DNS</strong> en
                                     Windows Server 2022 para automatizar la asignación de direcciones IP y garantizar la
-                                    resolución de nombres dentro del dominio <code>empresa.local</code>. Este
-                                    laboratorio permite simular una red corporativa funcional, optimizar la conectividad
-                                    entre clientes y servidores, y preparar el entorno para políticas avanzadas y
-                                    escaneos internos.
+                                    resolución de nombres dentro del dominio <code>empresa.local</code>. 
                                 </p>
 
                                 <p><strong>Herramientas utilizadas:</strong><br>
@@ -439,8 +434,8 @@
                                     enlace, DNS y duración de concesión. Verifiqué la correcta resolución de nombres
                                     mediante pruebas de conectividad y comandos como <code>nslookup</code> y
                                     <code>ping</code>. Este laboratorio fortaleció mi comprensión sobre la
-                                    infraestructura de red, la interoperabilidad entre servicios y la preparación de
-                                    entornos dinámicos para clientes unidos al dominio.
+                                    infraestructura de red.
+                                    Comprendí la interacción entre servicios como DHCP, DNS y Active Directory.
                                 </p>
                             </div>
                         </div>
@@ -450,10 +445,8 @@
                                 <!-- Capturas, documentación y resultados -->
                                 <p><strong>Objetivo:</strong><br>
                                     Aplicar políticas de grupo (GPOs) en Windows Server 2022 utilizando <strong>filtrado
-                                        avanzado</strong> por seguridad y WMI, para controlar con precisión qué usuarios
-                                    o equipos reciben configuraciones específicas. Este enfoque permite segmentar
-                                    políticas dentro de una misma OU, optimizando el control y la seguridad en entornos
-                                    IT/SOC.</p>
+                                        avanzado</strong> por seguridad, para controlar con precisión qué usuarios
+                                    o equipos reciben configuraciones específicas.</p>
                                 <ul>
                                     <li><strong>Reestructuración de Active Directory</strong><br>
                                         <img src="/img/Labs/GPO/4-GPO 0.png"
@@ -522,7 +515,9 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                <p><strong>Resultado y aprendizaje obtenido:</strong><br>Se logró crear una estructura
+                                <p><strong>Resultado y aprendizaje obtenido:</strong>
+                                    <br>
+                                    Se logró crear una estructura
                                     de OUs segmentada por departamento, vinculando la GPO
                                     <code>Bloqueo_Panel_deControl</code> exclusivamente a <code>Dept_Ventas</code>
                                     mediante configuración de usuario. Se verificó su aplicación efectiva mediante
@@ -569,8 +564,8 @@
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se creó la directiva <code>Seguridad_Contraseña</code> desde
                                             <strong>Group Policy Management</strong>, aplicándola a nivel de dominio. En
-                                            la ruta <strong>Configuración del equipo → Configuración de Windows →
-                                                Configuración de seguridad → Directivas de cuenta → Directiva de
+                                            la ruta <strong>Configuración del equipo > Configuración de Windows >
+                                                Configuración de seguridad > Directivas de cuenta > Directiva de
                                                 contraseñas</strong>, se establecieron los siguientes parámetros:
                                         <ul>
                                             <li><code>Aplicar el historial de contraseñas</code>: 24 contraseñas
@@ -620,8 +615,7 @@
                                             <li><code>Auditar el acceso a objetos</code></li>
                                         </ul>
                                         Estas configuraciones permiten registrar intentos de acceso, modificaciones de
-                                        cuentas y actividades sobre archivos protegidos. La auditoría básica mejora la
-                                        trazabilidad del sistema sin generar una sobrecarga excesiva de eventos.
+                                        cuentas y actividades sobre archivos protegidos.
                                         </p>
                                         <br>
                                     </li>
@@ -631,8 +625,8 @@
                                             style="max-width: 100%; height: auto; width: 720px;" />
                                         <p>Se creó la directiva <code>Restriccion_USB</code> y se vinculó a la unidad
                                             organizativa <strong>Dept_IT</strong>. Desde el editor de directivas, se
-                                            accedió a la ruta <strong>Configuración del equipo → Plantillas
-                                                administrativas → Sistema → Acceso al almacenamiento extraíble</strong>,
+                                            accedió a la ruta <strong>Configuración del equipo > Plantillas
+                                                administrativas > Sistema > Acceso al almacenamiento extraíble</strong>,
                                             donde se revisaron las políticas disponibles para restringir el uso de
                                             dispositivos USB, discos externos y otros medios extraíbles.
                                             <br><br>
@@ -652,7 +646,7 @@
                                         <p>Se creó la directiva <code>Bloqueo_PanelControl</code> y se vinculó a la
                                             unidad organizativa <strong>Dept_RRHH</strong>, que contiene usuarios no
                                             técnicos. Desde el editor de directivas, se accedió a la ruta
-                                            <strong>Configuración del usuario → Plantillas administrativas → Panel de
+                                            <strong>Configuración del usuario > Plantillas administrativas > Panel de
                                                 control</strong>, habilitando la política
                                             <code>Prohibir el acceso al Panel de control y a la configuración de PC</code>.
                                             <br><br>
@@ -662,7 +656,7 @@
                                             usuarios mixtos.
                                             <br><br>
                                         <p><em>🛈 Nota:</em> Esta directiva fue previamente aplicada y documentada en
-                                            la sección <strong>D - Aplicación de GPOs con filtrado avanzado</strong>,
+                                            la sección <strong>Aplicación de GPOs con filtrado avanzado</strong>,
                                             donde se utilizó filtrado por grupo para restringir el acceso al Panel de
                                             Control en usuarios no técnicos.</p>
                                         </p>
@@ -777,7 +771,7 @@
                                         <img src="/img/Labs/Documentacion/Documentacion 2.png"
                                             alt="Estructura actual de OUs en AD" class="img-fluid mb-3"
                                             style="max-width: 100%; height: auto; width: 720px;">
-                                        <p>Se decidió reestructurar las OUs para mejorar la administración, auditoría y
+                                        <p>Decidí reestructurar las OUs para mejorar la administración, auditoría y
                                             segmentación de políticas. Cada departamento ahora cuenta con su propia OU,
                                             lo que facilita la aplicación de GPOs específicas.</p>
                                     </div>
@@ -795,42 +789,26 @@
                                 <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
                                     data-bs-parent="#registroAccordion">
                                     <div class="accordion-body">
-                                        <p>La GPO <code>Bloqueo_Panel_deControl</code> fue vinculada tanto a
+                                        <img src="/img/Labs/Documentacion/Documentacion 3.png"
+                                            alt="Reutilización de GPOs" class="img-fluid mb-3"
+                                            style="max-width: 100%; height: auto; width: 720px;">
+                                        <p>La GPOs <code>Bloqueo_Panel_deControl</code>, <code>Restriccion_USB</code> y 
+                                            <code>Seguridad_Contraseña</code> fueron vinculadas tanto a
                                             <code>Dept_Ventas</code> como a <code>Dept_RRHH</code>. Esta estrategia
                                             permite mantener una configuración centralizada y reducir la cantidad de
                                             objetos de directiva en el dominio.</p>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Caso 4 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                        Aplicación de GPO por usuario
-                                    </button>
-                                </h2>
-                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                                    data-bs-parent="#registroAccordion">
-                                    <div class="accordion-body">
-                                        <p>La política <code>Bloqueo_Panel_deControl</code> se aplicó mediante
-                                            <strong>Configuración de Usuario</strong>, garantizando que los usuarios de
-                                            <code>Dept_Ventas</code> no puedan acceder al Panel de Control,
-                                            independientemente del equipo que utilicen. Usuarios técnicos como IT quedan
-                                            fuera del alcance de esta GPO.</p>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </section>
                 <section id="contacto" class="text-white py-5">
                     <div class="container text-center">
                         <h2>Contacto</h2>
-                        <p>¿Quieres colaborar o revisar mi trabajo? Escríbeme.</p>
-                        <a href="mailto:tuemail@ejemplo.com" class="btn btn-light">Enviar correo</a>
+                       
+                        <p>¿Quieres colaborar/revisar mis pryectos o tienes una oferta laboral? Escríbeme!</p>
+                        <a href="mailto:antonio.sosa.tech@gmail.com" class="btn btn-light">Enviar correo</a>
                     </div>
                 </section>
             </div>
